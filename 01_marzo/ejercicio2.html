@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio2</title>
+    <style>
+        body {
+            background-color: #d4f5d4; /* verde suave */
+            color: #1b3b1b; /* contraste oscuro */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        section {
+            max-width: 860px;
+            margin: auto;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        .top-item {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #c5edcc;
+            border-radius: 10px;
+        }
+
+        .top-1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .top-2 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .top-3 {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #c5edcc;
+        }
+
+        table th, table td {
+            border: 2px solid #1b3b1b;
+            padding: 15px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #a8d9af;
+            font-weight: bold;
+        }
+
+        aside {
+            background-color: #b0e0b0;
+            border-left: 5px solid #1b3b1b;
+            padding: 10px 15px;
+            margin: 15px auto;
+            max-width: 600px;
+            font-style: italic;
+        }
+
+        dialog {
+            border: 2px solid #1b3b1b;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #c5edcc;
+        }
+
+        button {
+            background-color: #1b3b1b;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #0d1f0d;
+        }
+    </style>
+    <!-- El estilo lo hice con ayuda de la ia. -->
+</head>
+<body>
+<nav>
+    <a href="#recomendaciones">Recomendaciones</a>
+    <a href="#a-probar">Cosas a probar</a>
+    <a href="#top-tres">Top 3</a>
+    <a href="#tabla-comparativa">Tabla Comparativa</a>
+    <a href="#footer">Pie de la pagina</a>  
+</nav>
+<br>
+    <section id="recomendaciones">
+  <h1>Mi recomendacion</h1>
+  <br>
+  <h3>En esta pagina voy a recomendar un juego en especifico llamado
+    Dead by Daylight </h3>
+  <br>
+  <p>Dead by Daylight es un juego de horror multijugador 4 contra 1
+    en el que el jugador representa el rol del asesino y los 4 restantes
+    juegan como sobrevivientes que intentan escapar del asesino 
+    y evitar ser capturados y sacrificados.
+  </p> 
+  <article>
+    <h2>Por qué recomiendo Dead by Daylight</h2>
+    <p>  Lo recomiendo porque es un muy buen juego que combina
+         estrategia, terror y emoción en cada partida.
+          Su mecánica única de supervivencia y persecución 
+          lo hace adictivo y perfecto para jugar con amigos.</p>
+  </article>
+  <ol>
+    <h2>lista de recomendaciones</h2>
+  <li>Jujutsu Kaisen(serie)</li>
+  <li>Dead By daylight(juego)</li>
+  <li>Halloween(Pelicula)</li>
+
+</ol>
+<br>
+<img src="wp2222240.jpg" alt="Foto de mi recomendacion" width="300">
+
+<aside>🎮 Dead by Daylight fue lanzado el 30 de junio de 2016. Es desarrollado por Behaviour Digital y sigue siendo uno de los juegos de horror multijugador más populares del mundo.</aside>
+
+<button onclick="document.getElementById('dialogDBD').showModal()">¿Te gusta este juego?</button>
+
+<dialog id="dialogDBD">
+    <h3>Opinión sobre Dead by Daylight</h3>
+    <p>¿Te gustaría jugar Dead by Daylight?</p>
+    <button onclick="alert('¡Excelente! Espero que lo disfrutes'); document.getElementById('dialogDBD').close()">Sí</button>
+    <button onclick="alert('Sin problema, hay muchos otros juegos para explorar'); document.getElementById('dialogDBD').close()">No</button>
+</dialog>
+<!-- el aside y el dialog los hice con ayuda de la ia. -->
+
+
+
+<a href="https://deadbydaylight.com/">Pagina oficial de deab by daylight</a>
+   <br>
+</section>
+<hr>
+<section id="a-probar">
+<h2>Cosas a probar</h2>
+
+<ol>
+<li>Arc Riders(juego)</li>
+<li>Invencible(serie)</li>
+<li>Spiderman Brand new day(pelicula)</li>
+</ol>
+
+<img src="6e71b76f-a896-arc-raiders-launch-day-card-300x200-300x200.png" 
+alt="juego a probar">
+
+
+
+</section>
+<hr>
+
+<section id="top-tres">
+<h2>Mi Top 3 de Recomendaciones</h2>
+
+<div class="top-item top-1"> 1. Dead by Daylight (Juego)</div>
+
+
+<div class="top-item top-2"> 2. Jujutsu Kaisen (Serie)</div>
+
+
+<div class="top-item top-3"> 3. Halloween (Película)</div>
+
+
+</section>
+<hr>
+
+<section id="tabla-comparativa">
+<h2>Tabla Comparativa de Entretenimiento</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Título</th>
+            <th>Género</th>
+            <th>Duración</th>
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Juego</td>
+            <td>Dead by Daylight</td>
+            <td>Horror/Survival</td>
+            <td>Variable</td>
+            
+        </tr>
+        <tr>
+            <td>Serie</td>
+            <td>Jujutsu Kaisen</td>
+            <td>Anime/Acción</td>
+            <td>24 min/episodio</td>
+           
+        </tr>
+        <tr>
+            <td>Película</td>
+            <td>Halloween</td>
+            <td>Horror</td>
+            <td>91 minutos</td>
+           
+        </tr>
+    </tbody>
+</table>
+<!-- La tabla comparativa la hice con ayuda de la ia. -->
+</section>
+<hr>
+<br>
+
+<footer id="footer">Bruno Mendez 2026 /ubicacion actual <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13138.9580312482!2d-56.71082340032243!3d-34.58545725157038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a19050c2c5baf5%3A0xe38750534f0bb04e!2s80100%20Puntas%20de%20Valdez%2C%20Departamento%20de%20San%20Jos%C3%A9!5e0!3m2!1ses-419!2suy!4v1774000512045!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</footer>
+</body>
+
+  
