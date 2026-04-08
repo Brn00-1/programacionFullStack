@@ -1,0 +1,29 @@
+* {
+    text-align: center;
+    font-style: 'Arial', sans-serif;
+    background-color: #1a5bbd;
+}
+ 
+h1 {
+    color: #45fff6;
+    font-size: 50px;
+}
+
+
+
+a {
+  background-color: powderblue;
+  transition: background-color 0.5s;
+}
+
+a:hover {
+  background-color: gold;
+}   
+
+img {
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}   
