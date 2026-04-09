@@ -1,0 +1,9 @@
+5
+
+Detectás correctamente los principales elementos como main, header, footer y section, aunque a veces se presenta confusión con article (algo normal en esta etapa).
+
+Falta seguir incorporando y reconociendo más etiquetas semánticas.
+
+Para aclarar: section agrupa contenido relacionado dentro de un tema de la página, mientras que article representa contenido independiente que puede entenderse por sí solo.
+
+PD: Bajale un poco a la IA.
