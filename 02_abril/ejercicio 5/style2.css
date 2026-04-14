@@ -28,3 +28,66 @@
     display: inline-flex;
 }
 
+.primercuadro {
+    width: 350px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: grey;
+}
+
+
+.segundocuadro {
+     width: 350px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: grey;
+}
+
+.tercercuadro {
+     width: 350px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(0, 0, 0);
+    background-color: grey;
+}
+
+
+
+h6 {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    background-color: rgb(50, 50, 197);
+    width: 40px;
+}
+
+
+h3 {
+    font-size: 23px;
+    width: 150px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
