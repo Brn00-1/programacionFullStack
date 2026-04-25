@@ -1,0 +1,5 @@
+6
+
+Guarda con la IA, hay cosas que sobran.
+
+No usaste la propiedad "position" para posicionar, clave para este ejercicio.
