@@ -1,0 +1,30 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: row;
+   width: 100%;
+}
+
+.GD {
+  display : flex;
+  flex-direction: row;
+  position : absolute;
+  top: 50%;
+  left: 20%;
+  color: #226079;
+}
+
+.PH {
+   display : flex;
+  flex-direction: row;
+  position : absolute;
+  right: 16%;  
+  top: 50%;
+color: #255a9e;
+}
