@@ -17,14 +17,84 @@
   position : absolute;
   top: 50%;
   left: 20%;
+  color: #1b4b5e;
+}
+
+.GDt {
+  display : flex;
+  flex-direction: row;
+  position : absolute;
+  top: 60%;
+  left: 15%;
   color: #226079;
+  width: 400px;
 }
 
 .PH {
    display : flex;
-  flex-direction: row;
+  flex-direction: column;
   position : absolute;
   right: 16%;  
   top: 50%;
-color: #255a9e;
+color: #1e467a;
 }
+
+.PHt {
+   display : flex;
+  flex-direction: column;
+  position : absolute;
+  right: 7%;
+  top: 60%;
+width: 400px;
+color: #34809e;
+ }
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #aaaaaa;
+    
+    
+}
+
+.Clients {
+    display: flex;
+    padding: 100px;
+    height: 300px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+   border-radius: 20px;
+   
+  
+}
+
+ .Clients img {
+    border-radius: 50%;
+
+ }
+
+ .testimonios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #808080;
+    text-align: center ;
+   width: 94%;
+   
+ }
+
+
+
+ .tst {
+   margin: 0px;
+
+ }
+   
+
+
+
+
+
+ 
