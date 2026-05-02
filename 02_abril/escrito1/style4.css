@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .contenedor1{
@@ -11,13 +12,23 @@
    width: 100%;
 }
 
+.cereza {
+    width: 50%;
+    
+}
+
+.mandarina { 
+    width: 50%;
+    
+}
+
 .GD {
   display : flex;
   flex-direction: row;
   position : absolute;
   top: 50%;
   left: 20%;
-  color: #1b4b5e;
+  color: #1F3D3A;
 }
 
 .GDt {
@@ -26,27 +37,29 @@
   position : absolute;
   top: 60%;
   left: 15%;
-  color: #226079;
+  color: #5E6E73;
   width: 400px;
+  text-align: center;
 }
 
 .PH {
    display : flex;
   flex-direction: column;
   position : absolute;
-  right: 16%;  
+  right: 20%;  
   top: 50%;
 color: #1e467a;
 }
 
 .PHt {
-   display : flex;
+  display : flex;
   flex-direction: column;
   position : absolute;
-  right: 7%;
+  right: 13%;
   top: 60%;
-width: 400px;
-color: #34809e;
+  width: 400px;
+  color: #34809e;
+  text-align: center;
  }
 
 h1 {
@@ -65,36 +78,136 @@ h1 {
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-   border-radius: 20px;
-   
+    gap:100px;
   
 }
-
- .Clients img {
+.Clients img {
     border-radius: 50%;
+ 
+}
 
- }
 
  .testimonios {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    color: #808080;
+    justify-content: center;
+    gap: 160px;
+    color: #1F3D3A;
     text-align: center ;
-   width: 94%;
+   width: 100%;
+    margin: 0px;
    
  }
 
+.testimonios p {
+    width: 400px;
+    font-size: 18px;
+
+}
 
 
  .tst {
-   margin: 0px;
-
+   margin: 200px;
+   
  }
    
+.Nombres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 420px;
+    text-align: center ;
+   width: 100%;
+   color: black;
+}
 
 
+.contenedor3{
+    display: flex;
+    flex-direction: row;
+   width: 100%;
+}
+
+.bl {
+    width: 25%;
+    
+}
+
+.orange {
+    width: 25%;
+}
+
+.cone {
+    width: 25%;
+}
+
+.sugarcubes {
+    width: 25%;
+}
 
 
+.contenedor4 {
+    background-color: #89d1c0;
+     height: 360px;
+     
+}
 
- 
+.Ss {
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+   
+    
+
+
+.tsns {
+  display: flex;
+    color: #3c6d63 ;
+    align-items: center;
+     justify-content: center;
+     padding: 60px;
+   
+}
+
+.parrafo {
+  display: flex;
+  color: #3c6d63 ;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:bottom;
+  gap: 30px;
+}
+
+.face {
+  width: 20px;
+}
+
+.insta {
+  width: 20px;
+}
+
+.twitter {
+  width: 20px;
+}
+
+.pinterest {
+  width: 20px;
+}
+
+
+body {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3   {
+  font-family: 'Fraunces', serif;
+}
