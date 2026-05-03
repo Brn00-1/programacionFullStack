@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+}
+
+.header {
+    background-color: #3DBEFF;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+}
+
+.logo {
+    color: #eeeeee;
+    font-size: 2.5em;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #3DBEFF;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    
+}
+
+.contact {
+    background-color: #000000;
+    border-radius: 50px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 600px;
+   background-color: #3DBEFF;
+   overflow: hidden;
+}
+
+.creatives {
+    position: relative;
+    top: -200px;
+    margin: 0 auto 20px;
+    font-size: 50px;
+    color: #eeeeee;
+    text-align: center;
+}
+
+.limon {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 700px;  
+
+}
+
+.seccion-transform {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    
+}
+
+.seccion-transform .col-imagen,
+.seccion-yogurt .col-imagen {
+    width: 50%;
+}
+
+.seccion-transform .col-texto,
+.seccion-yogurt .col-texto {
+    width: 50%;
+    padding: 60px;
+}
+
+.huevo {
+    width: 100%;
+}
+
+.transform {
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.plimon {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.boton1 {
+    padding: 0;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(238, 255, 0);
+}
+
+.seccion-yogurt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.yogurt {
+    width: 100%;
+}
+
+.yogurttexto {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pyogurt {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.boton2 {
+    padding: 0;
+    font-size: 18px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(155, 82, 82);
+}
+
+
+/* parte bruno */
+
+.contenedor1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.tarjeta-gd,
+.tarjeta-ph {
+    width: 50%;
+    position: relative;
+}
+
+.cereza,
+.mandarina {
+    width: 100%;
+}
+
+.tarjeta-texto {
+    position: absolute;
+    top: 0;
+    right: 220px;
+    width: 50%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;     
+    text-align: center;
+    padding: 0 40px;
+}
+
+.GD {
+    color: #1F3D3A;
+    margin-bottom: 16px;
+}
+
+.GDt {
+    color: #5E6E73;
+}
+
+.PH {
+    color: #1e467a;
+    align-items: center;
+}
+
+.PHt {
+    color: #34809e;
+}
+
+.tst {
+    padding: 200px 40px;
+}
+
+.tst h1 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #aaaaaa;
+}
+
+.Clients {
+    display: flex;
+    gap: 120px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 300px;
+
+    
+}
+
+.Clients img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+
+.testimonios,
+.Nombres {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    text-align: center;
+   
+}
+
+
+
+.testimonios p,
+.Nombres div {
+    width: 200px;
+}
+
+.contenedor3 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.bl, .orange, .cone, .sugarcubes {
+    width: 25%;
+}
+
+.contenedor4 {
+    background-color: #89d1c0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tsns {
+    color: #3c6d63;
+}
+
+.parrafo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    color: #3c6d63;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.face, .insta, .twitter, .pinterest {
+    width: 20px;
+}
