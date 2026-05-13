@@ -1,0 +1,75 @@
+body{
+    background:
+    linear-gradient(rgba(0,119,182,0.7), rgba(0,180,216,0.7)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1400&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game-container{
+    max-width: 700px;
+}
+
+.card{
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+
+    color: white;
+
+    border: 2px solid rgba(255,255,255,0.2);
+}
+
+h1{
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+#pregunta{
+    text-align: center;
+}
+
+.opcion{
+    background: rgba(255,255,255,0.2);
+
+    color: white;
+
+    font-size: 1.1rem;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.opcion:hover{
+    transform: scale(1.05);
+
+    background: #ffd60a;
+
+    color: #003049;
+}
+
+.correcta{
+    background: #38b000 !important;
+}
+
+.incorrecta{
+    background: #d90429 !important;
+}
+
+#resultado{
+    font-weight: bold;
+}

@@ -1,0 +1,200 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Nunito:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    background: #f3efe6;
+
+    font-family: 'Nunito', sans-serif;
+
+    color: #3b322c;
+
+    line-height: 1.8;
+}
+
+/* HEADER */
+header{
+    background: #6b705c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    position: relative;
+}
+
+/* DETALLE DECORATIVO */
+header::after{
+    content: "🧉";
+
+    position: absolute;
+
+    bottom: -20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #cb997e;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8rem;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* TITULO */
+header h1{
+    font-family: 'Merriweather', serif;
+
+    font-size: 4rem;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 2px;
+}
+
+/* SUBTITULO */
+header p{
+    font-size: 1.2rem;
+
+    color: #f5ebe0;
+}
+
+/* MAIN */
+main{
+    width: 80%;
+
+    margin: 80px auto;
+}
+
+/* SECCIONES */
+section{
+    margin-bottom: 60px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 2px dashed #b7b7a4;
+
+    transition: 0.4s;
+}
+
+/* HOVER */
+section:hover{
+    transform: translateX(10px);
+}
+
+/* TITULOS */
+h2{
+    font-family: 'Merriweather', serif;
+
+    color: #7f5539;
+
+    font-size: 2.2rem;
+
+    margin-bottom: 15px;
+
+    position: relative;
+}
+
+/* LINEA DECORATIVA */
+h2::before{
+    content: "";
+
+    position: absolute;
+
+    left: -20px;
+    top: 15px;
+
+    width: 10px;
+    height: 10px;
+
+    background: #cb997e;
+
+    border-radius: 50%;
+}
+
+/* PARRAFOS */
+p{
+    font-size: 1.08rem;
+
+    color: #463f3a;
+}
+
+/* LISTAS */
+ul{
+    list-style: none;
+
+    margin-top: 15px;
+}
+
+/* ITEMS */
+ul li{
+    margin: 15px 0;
+
+    padding-left: 35px;
+
+    position: relative;
+
+    font-size: 1.05rem;
+}
+
+/* ICONOS */
+ul li::before{
+    content: "☀";
+
+    position: absolute;
+
+    left: 0;
+
+    color: #dda15e;
+
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+footer{
+    background: #6b705c;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+
+    font-size: 1rem;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    header h1{
+        font-size: 2.5rem;
+    }
+
+    main{
+        width: 92%;
+    }
+
+    h2{
+        font-size: 1.6rem;
+    }
+
+}

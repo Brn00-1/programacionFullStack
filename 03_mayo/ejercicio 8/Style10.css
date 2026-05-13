@@ -1,0 +1,181 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: 'Poppins', sans-serif;
+
+    background:
+    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.9)),
+    url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1200&auto=format&fit=crop');
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: #1d3557;
+    line-height: 1.7;
+    padding: 40px;
+}
+
+/* TITULO */
+h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 60px;
+
+    font-family: 'Cinzel', serif;
+
+    color: #003049;
+
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+
+    position: relative;
+
+    animation: aparecer 1.5s ease;
+}
+
+/* LINEA DECORATIVA */
+h1::after{
+    content: "🇺🇾";
+    display: block;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+/* SECCIONES */
+section{
+    width: 80%;
+    margin: 40px auto;
+
+    background: rgba(255,255,255,0.8);
+
+    padding: 30px;
+
+    border-left: 8px solid #0077b6;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    transition: 0.5s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* EFECTO HOVER */
+section:hover{
+    transform: translateY(-10px) scale(1.02);
+
+    border-left: 8px solid #ffd60a;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* EFECTO BRILLO */
+section::before{
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+    left: -100%;
+
+    width: 250%;
+    height: 250%;
+
+    background: rgba(255,255,255,0.2);
+
+    transform: rotate(25deg);
+
+    transition: 0.8s;
+}
+
+section:hover::before{
+    top: 0;
+    left: 0;
+}
+
+/* SUBTITULOS */
+h2{
+    font-size: 2rem;
+
+    color: #005f73;
+
+    margin-bottom: 15px;
+
+    font-family: 'Cinzel', serif;
+
+    transition: 0.4s;
+}
+
+/* HOVER TITULO */
+h2:hover{
+    color: #d62828;
+
+    letter-spacing: 2px;
+}
+
+/* PARRAFOS */
+p{
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* EFECTO TIMELINE */
+section::after{
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -15px;
+
+    width: 15px;
+    height: 100%;
+
+    background: linear-gradient(#0077b6, #ffd60a);
+}
+
+/* ANIMACION */
+@keyframes aparecer{
+
+    from{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    body{
+        padding: 15px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    section{
+        width: 100%;
+        padding: 20px;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+}

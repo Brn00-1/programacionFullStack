@@ -1,0 +1,210 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: 'Montserrat', sans-serif;
+
+    background:
+    linear-gradient(rgba(0,40,85,0.6), rgba(0,119,182,0.5)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1400&auto=format&fit=crop');
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    color: white;
+
+    min-height: 100vh;
+}
+
+/* TITULO */
+h1{
+    text-align: center;
+
+    font-size: 4rem;
+
+    padding: 60px 20px;
+
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+    animation: bajar 1.2s ease;
+}
+
+/* CONTENEDOR */
+section{
+    width: 85%;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+
+    transition: 0.5s;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* EFECTO AGUA */
+section::before{
+    content: "";
+
+    position: absolute;
+
+    width: 300%;
+    height: 300%;
+
+    top: -100%;
+    left: -100%;
+
+    background: rgba(255,255,255,0.05);
+
+    transform: rotate(25deg);
+
+    transition: 1s;
+}
+
+section:hover::before{
+    top: 0;
+    left: 0;
+}
+
+/* HOVER */
+section:hover{
+    transform: translateY(-10px) scale(1.02);
+
+    background: rgba(255,255,255,0.2);
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* SUBTITULOS */
+h2{
+    font-size: 2rem;
+
+    margin-bottom: 15px;
+
+    color: #ffd60a;
+
+    transition: 0.4s;
+}
+
+/* HOVER TITULOS */
+h2:hover{
+    letter-spacing: 2px;
+
+    color: #90e0ef;
+}
+
+/* PARRAFOS */
+p{
+    font-size: 1.1rem;
+
+    line-height: 1.8;
+}
+
+/* LISTAS */
+ul{
+    list-style: none;
+}
+
+/* ITEMS */
+ul li{
+    margin: 15px 0;
+
+    padding: 15px;
+
+    background: rgba(255,255,255,0.1);
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+
+    position: relative;
+
+    padding-left: 55px;
+}
+
+/* ICONOS TURISMO */
+ul li::before{
+    content: ">";
+
+    position: absolute;
+
+    left: 18px;
+    top: 12px;
+
+    font-size: 1.4rem;
+}
+
+/* HOVER LISTA */
+ul li:hover{
+    transform: translateX(12px);
+
+    background: rgba(255,214,10,0.2);
+}
+
+/* IMAGENES */
+img{
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 25px auto;
+    border-radius: 25px;
+    border: 3px solid rgba(255,255,255,0.25);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 22px 45px rgba(0,0,0,0.45);
+}
+
+/* ANIMACION TITULO */
+@keyframes bajar{
+
+    from{
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    section{
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+}
