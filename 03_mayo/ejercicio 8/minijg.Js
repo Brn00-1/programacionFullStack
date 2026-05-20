@@ -27,7 +27,7 @@ const preguntas = [
     opciones: [
         "A) 1",
         "B) 5",
-        "C) 2",
+        "C) 4",
         "D) 3"
     ],
     correcta: "C"
