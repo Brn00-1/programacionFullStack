@@ -78,3 +78,48 @@ console.log("La resta de " + numero3 + " y " + numero4 + " es: " + (numero3 - nu
 console.log("La multiplicación de " + numero3 + " y " + numero4 + " es: " + (numero3 * numero4));
 console.log("La división de " + numero3 + " y " + numero4 + " es: " + (numero3 / numero4));
 
+
+
+
+let opciones=prompt("Saludar\n1.  MostrarFecha\n2. NumeroRandom\n3. Elige una opción:");
+
+switch (opciones) {
+    case "1":
+        console.log("Hola");
+        break;
+    case "2":
+        console.log("La fecha actual es: " + new Date().toLocaleDateString());
+        break;
+    case "3":
+        console.log("El número aleatorio es: " + Math.floor(Math.random() * 10) + 1);
+        break;
+    default:
+        console.log("Opción no válida.");
+}
+
+
+let AdivinarNumero = Math.floor(Math.random() * 10) + 1;
+let intento = parseInt(prompt("Adivina el número entre 1 y 10:"));
+
+while (intento !== AdivinarNumero) {
+    if (intento < AdivinarNumero) {
+        intento = parseInt(prompt("El número es mayor. Adivina de nuevo:"));
+    } else {
+        intento = parseInt(prompt("El número es menor. Adivina de nuevo:"));
+    }
+}
+
+console.log("¡Felicidades! Has adivinado el número.");
+
+
+
+
+
+
+
+
+
+
+
+
+
