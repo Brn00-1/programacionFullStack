@@ -12,7 +12,7 @@
 
  
     <label>Categoría:</label>
-    <select id="category">
+    <select id="categoria">
       <option value="Any">Any</option>
       <option value="Programming">Programming</option>
       <option value="Misc">Misc</option>
@@ -23,16 +23,16 @@
 
     
     <label>Tipo:</label>
-    <select id="type">
+    <select id="tipo">
       <option value="single">Single</option>
       <option value="twopart">Twopart</option>
     </select>
 
-    <button id="btnChiste">Traer chiste</button>
+    <button id="btnChiste" onclick=chiste()>Traer chiste</button>
 
-    <div id="jokeBox"></div>
+    <div id="chiste"></div>
 
-    <div id="errorCaja" class="error hidden">
+    <div id="errorCaja" class="error">
 
 </div>
 </div>
